@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/New-user.css">
+    <title>Sing-Up ASAP</title>
+</head>
+<body>
+   
+        <div class="form-container">
+           <a href="Inicio.html">
+            <img src="img/ASAP LOGO.png" alt="Logo" class="logo">
+           </a >
+           <form id="loginForm" action="Estudiantes-noti.html">
+            <div class="form-container1">
+                <div class="inputs">
+                    <div class="izquierda">
+                        <input type="text" id="Name" placeholder="Nombre completo">
+                        <span id="NameError" class="error-message"></span>
+                        
+                        <input type="text" id="gmail" placeholder="Correo Electrónico">
+                        <span id="gmailError" class="error-message"></span>
+                        
+                        <select id="grado">
+                            <option value="">Grado y sección</option>
+                            <option value="1A">1ro A</option>
+                            <option value="1B">1ro B</option>
+                            <option value="1C">1ro C</option>
+                            <option value="1D">1ro D</option>
+                            <option value="1E">1ro E</option>
+                            <option value="2A">2Do A</option>
+                            <option value="2B">2Do B</option>
+                            <option value="2C">2Do C</option>
+                            <option value="2D">2Do D</option>
+                            <option value="3A">3Ro A</option>
+                            <option value="3B">3Ro B</option>
+                            <option value="3C">3Ro C</option>
+                            <option value="3D">3Ro D</option>
+                            <option value="4A">4To A</option>
+                            <option value="4B">4To B</option>
+                            <option value="4C">4To C</option>
+                            <option value="4D">4To D</option>
+                            <option value="5A">5To A</option>
+                            <option value="5B">5To B</option>
+                            <option value="5C">5To C</option>
+                            <option value="5D">5To D</option>
+                            <option value="6A">6To A</option>
+                            <option value="6B">6To B</option>
+                            <option value="6C">6To C</option>
+                            <option value="6D">6To D</option>
+                        </select>
+                        
+                        <span id="gradoError" class="error-message"></span>
+                    </div>
+        
+                    <div class="derecha">
+                        <select id="genero">
+                            <option value="">Género</option>
+                            <option value="Masculino">Masculino</option>
+                            <option value="Femenino">Femenino</option>
+                        </select>
+                        <span id="generoError" class="error-message"></span>
+        
+                        <input type="number" id="Number" placeholder="Número telefónico del representante">
+                        <span id="NumberError" class="error-message"></span>
+        
+                        <input type="password" id="password2" placeholder="PIN de seguridad">
+                        <span id="password2Error" class="error-message"></span>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <button type="submit">Crear Usuario</button>
+            <div>
+                <a href="ol.html">¿Has olvidado tu Pin de seguridad?</a>
+            </div>
+        </form>
+        </div>
+        <div class="image-container">
+            <div class="carousel">
+                <img src="img/Registrer-img/Recepcionista.svg" alt="Imagen 1" class="carousel-img active">
+                <img src="img/Registrer-img/Datos.svg" alt="Imagen 2" class="carousel-img">
+                <img src="img/Registrer-img/teacher-93.svg" alt="Imagen 3" class="carousel-img">
+                <img src="img/Registrer-img/marketing-2-67.svg" alt="Imagen 4" class="carousel-img">
+            </div>
+            <h2>Proceso de asistencia</h2>
+            <div class="dots">
+                <span class="dot active" onclick="setCurrentSlide(0)"></span>
+                <span class="dot" onclick="setCurrentSlide(1)"></span>
+                <span class="dot" onclick="setCurrentSlide(2)"></span>
+                <span class="dot" onclick="setCurrentSlide(3)"></span>
+            </div>
+        </div>
+
+    <script src="js/New-user.js"></script>
+</body>
+</html>

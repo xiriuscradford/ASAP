@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Asistencia Escolar</title>
+    <link rel="stylesheet" href="css/inicio.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar" id="sidebar">
+            <div class="menu-icon">
+                <button class="btn-menu" onclick="toggleMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M4 6l16 0" />
+                        <path d="M4 12l16 0" />
+                        <path d="M4 18l16 0" />
+                    </svg>
+                </button>
+            </div>
+            <div class="sidebar-divider"></div>
+            
+            <div class="sidebar-icon active" data-icon="dashboard">
+                <div class="icon2">
+                    <a href="Inicio.html" class="icon2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-gauge" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                            <path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                            <path d="M13.41 10.59l2.59 -2.59" />
+                            <path d="M7 12a5 5 0 0 1 5 -5" />
+                        </svg>
+                        <span class="menu-text" style="color: #48B0EA;">Inicio</span>
+                    </a>
+                </div>
+                <div class="line-menu"></div>
+                
+                
+            </div>
+            <div class="sidebar-icon" data-icon="notifications">
+                <div class="icon1"> 
+                    <div class="notifi">
+                        <a href="Notifications.html" class="icon3">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bell" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <path d="M10 5a2 2 0 1 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6" />
+                                    <path d="M9 17v1a3 3 0 0 0 6 0v-1" />
+                                </svg>
+                                <div class="notifications1">11</div> 
+                            </div>
+                            <span class="menu-text">Notificaciones</span>
+                        </a>
+                    </div>
+                </div>
+              
+            </div> 
+            
+            <div class="sidebar-icon" data-icon="notifications">
+                <div class="icon1"> 
+                    <div class="notifi">
+                        <a href="Estudiantes-noti.html" class="icon3">
+                            <div class="icon-wrapper">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-users" 
+                                    width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9e9e9e" 
+                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <path d="M9 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+                                    <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                                    <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
+                                </svg>
+                            </div>
+                            <span class="menu-text">Administración</span>
+                        </a>
+                
+                       
+                       <div class="dropdown-menu">
+                         <ul class="ul">
+                             <li><a href="Estudiantes-noti.html">Estudiantes</a></li>
+                         </ul>
+                       </div>
+                    </div>
+                </div>
+                
+              
+            </div> 
+              
+            
+            <div class="sidebar-icon" data-icon="logout">
+                <a href="log in.html" class="icon3">
+                   <div class="icon1" id="Cerrar">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-logout" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                         <path d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2" />
+                         <path d="M9 12h12l-3 -3" />
+                         <path d="M18 15l3 -3" />
+                     </svg>
+                   </div>
+                   <span class="menu-text" id="menu-text">Cerrar sesión</span>
+                </a>
+            </div>
+        </div>
+        <div class="main-content" id="main-content">
+            <div class="header">
+                <div class="logo-section">
+                    <div class="vertical-line"></div>
+                    <a href="Inicio.html">
+                        <img src="img/ASAP LOGO.png"></img>
+                    </a>
+                    <div class="update-info">
+                        <p>Proxima actualizacion "31/10/24"</p>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <div class="vertical-line"></div>
+                    <p id="datetime"></p>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-settings" width="34" height="34" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" id="settings-icon">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z" />
+                        <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                    </svg>
+                    <div class="profile">
+                        <img src="img/Victoria.png" alt="Foto de perfil" class="profile-pic" id="user-profile-picture">
+                        <div class="online"></div>
+                        
+                    </div>
+                    <div class="username" id="user-name">
+                        Usuario
+                    </div>
+                </div>
+            </div>
+            <div class="container-input">
+                <div class="search-div">
+                    <span class="search-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="44" height="44" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                            <path d="M21 21l-6 -6" />
+                          </svg>
+                    </span>
+                    <input type="text" placeholder="Search" name="text" class="input">
+                </div>
+                <div class="select-wrapper">
+                    <select class="custom-select">
+                      <option value="" disabled selected>Grado</option>
+                      <option value="1">Primero (1ro)</option>
+                      <option value="2">Segundo (2do)</option>
+                      <option value="3">Tercero (3ro)</option>
+                      <option value="4">Cuarto (4to)</option>
+                      <option value="5">Quinto (5to)</option>
+                      <option value="6">Sexto (6to)</option>
+                    </select>
+                  </div>
+            </div>
+            <div class="dashboard">
+                
+                <!-- cartas 2 -->
+
+                <div class="card">
+                    <div class="card-content">
+                        <div>
+                            <h3>Resumen de asistencia</h3>
+                            <p>Asistencia por dia y aula.</p>
+                            <button class="action-button">Ver más</button>
+                        </div>
+                    </div>
+                    <img alt="Resumen de asistencia" height="100" src="img/Resumen asist.jpg" width="100" />
+                </div>
+                <div class="card1">
+                    <div class="card-content">
+                        <div>
+                            <h3>Alertas y Seguimiento</h3>
+                            <p>Estudiantes con frecuentes ausencias por aula.</p>
+                        </div>
+                        <a href="Notifications.html" style="text-decoration: none;">
+                            <button class="action-button">Ver más</button>
+                         </a>
+                    </div>
+                    <img alt="Headphones, a smartphone displaying an app, and a notebook on a table" height="100"
+                        src="img/alertas.jpg"
+                        width="100" />
+                </div>
+
+
+                <div style="width: 5%;">
+                    
+                </div>
+                <div class="card2" style="margin-right: 300px; position: absolute; margin-top: 400px;">
+                    <div class="card-content">
+                        <div>
+                            <h3>
+                                Registro Rápido
+                            </h3>
+                            <p>
+                                Acceso a modificar manualmente las Asistencias.
+                            </p>
+                        </div>
+                        <a href="Estudiantes-noti.html" style="text-decoration: none;">
+                            <button class="action-button">Ver más</button>
+                        </a>
+                    </div>
+                    <img alt="Headphones, a smartphone displaying an app, and a notebook on a table" height="100"
+                        src="img/registro-rapido.jpg"
+                        width="300px" class="img-ultima" style="width: 500px;"/>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal" id="settings-modal">
+        <div class="modal-content">
+            <span class="close" id="close-modal">
+                ×
+            </span>
+            <h2>
+                Modificar Perfil
+            </h2>
+            <input id="new-username" placeholder="Nuevo nombre de usuario" type="text" />
+            <input id="new-profile-picture" type="file" />
+            <button id="save-changes">
+                Guardar Cambios
+            </button>
+        </div>
+    </div>
+
+
+
+    <script src="js/inicio.js"></script>
+</body>
+</html>

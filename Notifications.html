@@ -1,0 +1,547 @@
+<html>
+    <head>
+        <title>
+            Asap
+        </title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="CSS/notifications.css">
+    </head>
+<body>
+    <div class="container">
+        <div class="sidebar" id="sidebar">
+            <div class="menu-icon">
+                <button class="btn-menu" onclick="toggleMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M4 6l16 0" />
+                        <path d="M4 12l16 0" />
+                        <path d="M4 18l16 0" />
+                    </svg>
+                </button>
+            </div>
+            <div class="sidebar-divider"></div>
+            
+            <div class="sidebar-icon active" data-icon="dashboard">
+                <div class="icon2">
+                    <a href="Inicio.html" class="icon2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-gauge" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                            <path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                            <path d="M13.41 10.59l2.59 -2.59" />
+                            <path d="M7 12a5 5 0 0 1 5 -5" />
+                        </svg>
+                        <span class="menu-text">Inicio</span>
+                    </a>
+                </div>
+                
+            </div>
+            <div class="sidebar-icon" data-icon="notifications">
+                <div class="icon3"> 
+                    <div class="notifi">
+                        <a href="Notifications.html" class="icon3">
+                            <div style="margin-right: 5px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bell" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <path d="M10 5a2 2 0 1 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6" />
+                                    <path d="M9 17v1a3 3 0 0 0 6 0v-1" />
+                                </svg>
+                                <div class="notifications1">11</div> 
+                            </div>
+                            <span class="menu-text">Notificaciones</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="line-menu"></div>
+            </div> 
+            
+
+            <div class="sidebar-icon" data-icon="notifications">
+                <div class="icon1"> 
+                    <div class="notifi">
+                        <a href="Estudiantes-noti.html" class="icon3">
+                            <div class="icon-wrapper">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-users" 
+                                    width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9e9e9e" 
+                                    fill="none" stroke-linecap="round" stroke-linejoin="round" style="border: solid #cacaca;">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <path d="M9 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+                                    <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                                    <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
+                                </svg>
+                            </div>
+                            <span class="menu-text" style="color: black;">Administración</span>
+                        </a>
+                
+                       
+                       <div class="dropdown-menu">
+                         <ul class="ul">
+                             <li><a href="Estudiantes-noti.html">Estudiantes</a></li>
+
+                         </ul>
+                       </div>
+                    </div>
+                </div>
+                
+              
+            </div> 
+            
+            <div class="sidebar-icon" data-icon="logout">
+               <div class="icon5" id="Cerrar">
+                <div class="cerrar-sesio">
+                    <a href="" class="icon5">
+                       <div>
+                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-logout" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                             <path d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2" />
+                             <path d="M9 12h12l-3 -3" />
+                             <path d="M18 15l3 -3" />
+                         </svg>
+                       </div>
+                        <span class="menu-text" id="menu-text">Cerrar sesión</span>
+                    </a>
+                 
+               </div>
+                
+                </div>
+                
+               
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="header">
+                <div class="logo-section">
+                    <div class="vertical-line"></div>
+                    <a href="Inicio.html">
+                        <img src="img/ASAP LOGO.png"></img>
+                    </a>
+                    <div class="update-info">
+                        <p>Proxima actualizacion "31/10/24"</p>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <div class="vertical-line"></div>
+                    <p id="datetime"></p>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-settings" width="34" height="34" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z" />
+                        <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                    </svg>
+                    <div class="profile">
+                        <img src="img/Victoria.png" alt="Foto de perfil" class="profile-pic">
+                        <div class="online"></div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+        <div class="contenedor-notificaciones">
+             <div class="info-notis">
+                <div class="search-bar">
+                    <i class="fas fa-search">
+                    </i>
+                    <input id="search-input" onkeyup="searchUser()" placeholder="Buscar" type="text" />
+                </div>
+                <div class="tabs">
+                    <div lass="active" onclick="showTab('exemplary-attendance')" data-tab="exemplary-attendance">
+                        Asistencia ejemplar
+                    </div>
+                    <div onclick="showTab('attended')" data-tab="attended">
+                        Asistidos
+                    </div>
+                    <div onclick="showTab('not-attended')" data-tab="not-attended">
+                        No asistido
+                    </div>
+                </div>
+                <div class="content" id="exemplary-attendance">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>
+                                    Nombre
+                                </th>
+                                <th>
+                                    Email
+                                </th>
+                                <th>
+                                    Grado
+                                </th>
+                                <th>
+                                    Estado
+                                </th>
+                                <th>
+                                    Acciones
+                                </th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Marianny Abad
+                                </td>
+                                <td>
+                                    tucasa@gmail.com
+                                </td>
+                                <td>
+                                    1toC
+                                </td>
+                                <td>
+                                    <i class="fas fa-check-circle" style="color: #00AEEF;">
+                                    </i>
+                                </td>
+                                <td>
+                                    <i class="fas fa-eye">
+                                    </i>
+                                    <i class="fas fa-ellipsis-h" onclick="openEditModal(this)">
+                                    </i>
+                                    <i class="fas fa-exchange-alt" onclick="moveToCatalog(this)">
+                                    </i>
+                                </td>
+                            </tr>
+                
+                            <td>
+                                Fredereick Peguero
+                            </td>
+                            <td>
+                                Wasakaka@gmail.com
+                            </td>
+                            <td>
+                                6toD
+                            </td>
+                            <td>
+                                <i class="fas fa-check-circle" style="color: #00AEEF;">
+                                </i>
+                            </td>
+                            <td>
+                                <i class="fas fa-eye">
+                                </i>
+                                <i class="fas fa-ellipsis-h" onclick="openEditModal(this)">
+                                </i>
+                                <i class="fas fa-exchange-alt" onclick="moveToCatalog(this)">
+                                </i>
+                            </td>
+                            </tr>
+                
+                            <td>
+                                Francisco Mesa
+                            </td>
+                            <td>
+                                BOMBOCLAT@gmail.com
+                            </td>
+                            <td>
+                                1toA
+                            </td>
+                            <td>
+                                <i class="fas fa-check-circle" style="color: #00AEEF;">
+                                </i>
+                            </td>
+                            <td>
+                                <i class="fas fa-eye">
+                                </i>
+                                <i class="fas fa-ellipsis-h" onclick="openEditModal(this)">
+                                </i>
+                                <i class="fas fa-exchange-alt" onclick="moveToCatalog(this)">
+                                </i>
+                            </td>
+                            </tr>
+                
+                            <td>
+                                Manuel Almanzar
+                            </td>
+                            <td>
+                                Dualtemanolitillo@gmail.com
+                            </td>
+                            <td>
+                                5toD
+                            </td>
+                            <td>
+                                <i class="fas fa-check-circle" style="color: #00AEEF;">
+                                </i>
+                            </td>
+                            <td>
+                                <i class="fas fa-eye">
+                                </i>
+                                <i class="fas fa-ellipsis-h" onclick="openEditModal(this)">
+                                </i>
+                                <i class="fas fa-exchange-alt" onclick="moveToCatalog(this)">
+                                </i>
+                            </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="content" id="attended" style="display: none;">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>
+                                    Nombre
+                                </th>
+                                <th>
+                                    Email
+                                </th>
+                                <th>
+                                    Grado
+                                </th>
+                                <th>
+                                    Estado
+                                </th>
+                                <th>
+                                    Acciones
+                                </th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Angel Ramirez
+                                </td>
+                                <td>
+                                    Lemoquite@gmail.com
+                                </td>
+                                <td>
+                                    2toB
+                                </td>
+                                <td>
+                                    <i class="fas fa-exclamation-circle" style="color: #FFA500;">
+                                    </i>
+                                </td>
+                                <td>
+                                    <i class="fas fa-eye">
+                                    </i>
+                                    <i class="fas fa-ellipsis-h" onclick="openEditModal(this)">
+                                    </i>
+                                    <i class="fas fa-exchange-alt" onclick="moveToCatalog(this)">
+                                    </i>
+                                </td>
+                            </tr>
+                
+                            <tr>
+                                <td>
+                                    Gabriela Antigua
+                                </td>
+                                <td>
+                                    Cayendoseapedazo@gmail.com
+                                </td>
+                                <td>
+                                    6toC
+                                </td>
+                                <td>
+                                    <i class="fas fa-exclamation-circle" style="color: #FFA500;">
+                                    </i>
+                                </td>
+                                <td>
+                                    <i class="fas fa-eye">
+                                    </i>
+                                    <i class="fas fa-ellipsis-h" onclick="openEditModal(this)">
+                                    </i>
+                                    <i class="fas fa-exchange-alt" onclick="moveToCatalog(this)">
+                                    </i>
+                                </td>
+                            </tr>
+                
+                            <tr>
+                                <td>
+                                    Dhorian Frias
+                                </td>
+                                <td>
+                                    Cacofhonia@gmail.com
+                                </td>
+                                <td>
+                                    2toD
+                                </td>
+                                <td>
+                                    <i class="fas fa-exclamation-circle" style="color: #FFA500;">
+                                    </i>
+                                </td>
+                                <td>
+                                    <i class="fas fa-eye">
+                                    </i>
+                                    <i class="fas fa-ellipsis-h" onclick="openEditModal(this)">
+                                    </i>
+                                    <i class="fas fa-exchange-alt" onclick="moveToCatalog(this)">
+                                    </i>
+                                </td>
+                            </tr>
+                
+                            <tr>
+                                <td>
+                                    Francisco Vargas
+                                </td>
+                                <td>
+                                    Elmanilo69@gmail.com
+                                </td>
+                                <td>
+                                    3toA
+                                </td>
+                                <td>
+                                    <i class="fas fa-exclamation-circle" style="color: #FFA500;">
+                                    </i>
+                                </td>
+                                <td>
+                                    <i class="fas fa-eye">
+                                    </i>
+                                    <i class="fas fa-ellipsis-h" onclick="openEditModal(this)">
+                                    </i>
+                                    <i class="fas fa-exchange-alt" onclick="moveToCatalog(this)">
+                                    </i>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="content" id="not-attended" style="display: none;">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>
+                                    Nombre
+                                </th>
+                                <th>
+                                    Email
+                                </th>
+                                <th>
+                                    Grado
+                                </th>
+                                <th>
+                                    Estado
+                                </th>
+                                <th>
+                                    Acciones
+                                </th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Fray Salvador
+                                </td>
+                                <td>
+                                    Lafreidoramixta@gmail.com
+                                </td>
+                                <td>
+                                    6toC
+                                </td>
+                                <td>
+                                    <i class="fas fa-exclamation-triangle" style="color: #FF0000;">
+                                    </i>
+                                </td>
+                                <td>
+                                    <i class="fas fa-eye">
+                                    </i>
+                                    <i class="fas fa-ellipsis-h" onclick="openEditModal(this)">
+                                    </i>
+                                    <i class="fas fa-exchange-alt" onclick="moveToCatalog(this)">
+                                    </i>
+                                </td>
+                            </tr>
+                        </tbody>
+                
+                        <tr>
+                            <td>
+                                Emanuel Roa
+                            </td>
+                            <td>
+                                Elcojoconlabola@gmail.com
+                            </td>
+                            <td>
+                                4toB
+                            </td>
+                            <td>
+                                <i class="fas fa-exclamation-triangle" style="color: #FF0000;">
+                                </i>
+                            </td>
+                            <td>
+                                <i class="fas fa-eye">
+                                </i>
+                                <i class="fas fa-ellipsis-h" onclick="openEditModal(this)">
+                                </i>
+                                <i class="fas fa-exchange-alt" onclick="moveToCatalog(this)">
+                                </i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Carlos Gil
+                            </td>
+                            <td>
+                                Eldellelvapatio76@gmail.com
+                            </td>
+                            <td>
+                                3toA
+                            </td>
+                            <td>
+                                <i class="fas fa-exclamation-triangle" style="color: #FF0000;">
+                                </i>
+                            </td>
+                            <td>
+                                <i class="fas fa-eye">
+                                </i>
+                                <i class="fas fa-ellipsis-h" onclick="openEditModal(this)">
+                                </i>
+                                <i class="fas fa-exchange-alt" onclick="moveToCatalog(this)">
+                                </i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Marcos Ramirez
+                            </td>
+                            <td>
+                                elguerreodragon@gmail.com
+                            </td>
+                            <td>
+                                6toC
+                            </td>
+                            <td>
+                                <i class="fas fa-exclamation-triangle" style="color: #FF0000;">
+                                </i>
+                            </td>
+                            <td>
+                                <i class="fas fa-eye">
+                                </i>
+                                <i class="fas fa-ellipsis-h" onclick="openEditModal(this)">
+                                </i>
+                                <i class="fas fa-exchange-alt" onclick="moveToCatalog(this)">
+                                </i>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+             </div>
+           </div>
+            
+        </div>
+     </div>   
+    <div class="modal" id="settings-modal">
+        <div class="modal-content">
+            <span class="close" id="close-modal">
+                ×
+            </span>
+            <h2>
+                Modificar Perfil
+            </h2>
+            <input id="new-username" placeholder="Nuevo nombre de usuario" type="text" />
+            <input id="new-profile-picture" type="file" />
+            <button id="save-changes">
+                Guardar Cambios
+            </button>
+        </div>
+    </div>
+    <div class="modal" id="edit-modal">
+        <div class="modal-content">
+            <span class="close" id="close-edit-modal">
+                ×
+            </span>
+            <h2>
+                Editar Información del Usuario
+            </h2>
+            <input id="edit-name" placeholder="Nombre" type="text" />
+            <input id="edit-email" placeholder="Email" type="text" />
+            <input id="edit-grade" placeholder="Grado" type="text" />
+            <button id="save-edit-changes">
+                Guardar Cambios
+            </button>
+        </div>
+    </div>
+
+    
+    <script src="js/notifications.js"></script>
+</body>
+
+</html>

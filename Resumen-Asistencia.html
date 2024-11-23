@@ -1,0 +1,516 @@
+<html>
+
+<head>
+    <title>
+        Asap gueva
+    </title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="CSS/Resumen-asistencia.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar" id="sidebar">
+            <div class="menu-icon">
+                <button class="btn-menu" onclick="toggleMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="24"
+                        height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M4 6l16 0" />
+                        <path d="M4 12l16 0" />
+                        <path d="M4 18l16 0" />
+                    </svg>
+                </button>
+            </div>
+            <div class="sidebar-divider"></div>
+
+            <div class="sidebar-icon active" data-icon="dashboard">
+                <div class="icon2">
+                    <a href="Inicio.html" class="icon2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-gauge" width="24"
+                            height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                            <path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                            <path d="M13.41 10.59l2.59 -2.59" />
+                            <path d="M7 12a5 5 0 0 1 5 -5" />
+                        </svg>
+                        <span class="menu-text">Inicio</span>
+                    </a>
+                </div>
+
+            </div>
+            <div class="sidebar-icon" data-icon="notifications">
+                <div class="icon3">
+                    <div class="notifi">
+                        <a href="Notifications.html" class="icon3">
+                            <div style="margin-right: 5px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bell"
+                                    width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path
+                                        d="M10 5a2 2 0 1 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6" />
+                                    <path d="M9 17v1a3 3 0 0 0 6 0v-1" />
+                                </svg>
+                                <div class="notifications1">11</div>
+                            </div>
+                            <span class="menu-text">Notificaciones</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="line-menu"></div>
+            </div>
+           
+            <div class="sidebar-icon" data-icon="notifications">
+                <div class="icon1"> 
+                    <div class="notifi">
+                        <a href="Estudiantes-noti.html" class="icon3">
+                            <div class="icon-wrapper">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-users" style="border: #9E9E9E solid;"
+                                    width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9e9e9e" 
+                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <path d="M9 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+                                    <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                                    <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
+                                </svg>
+                            </div>
+                            <span class="menu-text">Administración</span>
+                        </a>
+                
+                       
+                       <div class="dropdown-menu">
+                         <ul class="ul">
+                             <li><a href="Estudiantes-noti.html">Estudiantes</a></li>
+                             
+                         </ul>
+                       </div>
+                    </div>
+                </div>
+                
+              
+            </div> 
+            
+            <div class="sidebar-icon" data-icon="logout">
+                <div class="icon5" id="Cerrar">
+                    <div class="cerrar-sesio">
+                        <a href="log in.html" class="icon5">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-logout"
+                                    width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path
+                                        d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2" />
+                                    <path d="M9 12h12l-3 -3" />
+                                    <path d="M18 15l3 -3" />
+                                </svg>
+                            </div>
+                            <span class="menu-text" id="menu-text">Cerrar sesión</span>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="header">
+                <div class="logo-section">
+                    <div class="vertical-line"></div>
+                    <a href="Inicio.html">
+                        <img src="img/ASAP LOGO.png"></img>
+                    </a>
+                    <div class="update-info">
+                        <p>Proxima actualizacion "31/10/24"</p>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <div class="vertical-line"></div>
+                    <p id="datetime"></p>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-settings" width="34"
+                        height="34" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                            d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z" />
+                        <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                    </svg>
+                    <div class="profile">
+                        <img src="img/Victoria.png" alt="Foto de perfil" class="profile-pic">
+                        <div class="online"></div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="contenedor-notificaciones">
+                <div class="info-notis">
+                    <h2>Asistencia General</h2>
+                    <div class="buscador">
+                        <div class="search-bar">
+                            <i class="fas fa-search"></i>
+                            <input id="search-input" onkeyup="searchStudent()" placeholder="Buscar" type="text" />
+                            
+                        </div>
+                        <select class="grade-select" id="gradeSelect">
+                            <option value="software">Software-5A</option>
+                            <option value="multimedia">Multimedia-5B</option>
+                            <option value="redes">Redes-5C</option>
+                        </select>
+                    </div>
+                    <div class="content" id="attendance-list">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th>Matrícula</th>
+                                    <th>Curso</th>
+                                    <th>Asistencia</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody id="student-list">
+                                <!-- Student rows will be dynamically added here -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="grande">
+                <div class="lacaja">
+                    <div class="caja-datos">
+                        <div class="caja1" style="overflow: hidden;">
+                            <h2 style="text-align: center; margin-top: 50px; overflow: hidden; z-index: 1;">
+                                Asitencia del dia</h2>
+                            <div class="sc-gauge">
+                                <div class="sc-background">
+                                    <div class="sc-percentage"></div>
+                                    <div class="sc-mask"></div>
+                                    <span class="sc-value">88%</span>
+                                </div>
+                                <span class="sc-min">0</span>
+                                <span class="sc-max">100</span>
+                            </div>
+                            <h2 style="text-align: center; margin-left: 10px;">Asistencia del centro</h2>
+                        </div>
+                        <div class="caja2">
+                            <h2>Asistencia Diaria por genero</h2>
+                            <div>
+                                <canvas id="myChart" style="width: 300px; margin-top: 70px;"></canvas>
+                            </div>
+                
+                            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                
+                            <script>
+                                const ctx = document.getElementById('myChart');
+                
+                                new Chart(ctx, {
+                                    type: 'bar',
+                                    data: {
+                                        labels: ['',], // Nombres de las barras
+                                        datasets: [{
+                                            label: 'Masculino',
+                                            data: [19],
+                                            backgroundColor: 'rgba(0, 168, 232, 1)',
+                                            borderWidth: 0,
+                                            barPercentage: 0.2, // Hacer las barras delgadas
+                                            categoryPercentage: 0.5 // Acercar las barras
+                                        }, {
+                
+                                            label: 'Femenino',
+                                            data: [12],
+                                            backgroundColor: 'gray',
+                                            borderWidth: 0,
+                                            barPercentage: 0.2, // Hacer las barras delgadas
+                                            categoryPercentage: 0.5 // Acercar las barras
+                                        }]
+                                    },
+                                    options: {
+                                        scales: {
+                                            x: {
+                                                display: true // Ocultar etiquetas del eje x
+                                            },
+                                            y: {
+                                                display: false, // Ocultar etiquetas y líneas del eje y
+                                                beginAtZero: true
+                                            }
+                                        },
+                                        plugins: {
+                                            legend: {
+                                                display: true // Ocultar leyenda
+                                            }
+                                        }
+                                    }
+                                });
+                            </script>
+                
+                            <h4>comparativa de asistencias por genero</h2>
+                
+                
+                
+                
+                
+                
+                        </div>
+                
+                        <div class="caja3">
+                
+                            <div class="title-dias">
+                                <div>
+                                    <p>Dias sin doncencia</p>
+                                </div>
+                                
+                            </div>
+                
+                
+                
+                            <div class="recordatorios" id="recordatorios">
+                
+                
+                                <div class="recordatorio-1">
+                                    <div class="reunio">
+                                        <p>Reunión de la ADP</p>
+                                    </div>
+                                    <div class="fecha">
+                                        <p>7/10/24</p>
+                                    </div>
+                                </div>
+                                <div class="recordatorio-1">
+                                    <div class="reunio">
+                                        <p>Reunión de la ADP</p>
+                                    </div>
+                                    <div class="fecha">
+                                        <p>7/10/24</p>
+                                    </div>
+                                </div>
+                                <div class="recordatorio-1">
+                                    <div class="reunio">
+                                        <p>Reunión de la ADP</p>
+                                    </div>
+                                    <div class="fecha">
+                                        <p>7/10/24</p>
+                                    </div>
+                                </div>
+                                <div class="recordatorio-1">
+                                    <div class="reunio">
+                                        <p>Reunión de la ADP</p>
+                                    </div>
+                                    <div class="fecha">
+                                        <p>7/10/24</p>
+                                    </div>
+                                </div>
+                
+                
+                            </div>
+                
+                            <div id="popup" class="popup">
+                                <div class="popup-content">
+                                    <span class="close" onclick="cerrarPopup()">&times;</span>
+                                    <h3>Dias sin docencia</h3>
+                                    <form id="formDias">
+                                        <label for="nombreDia">Nombre del día:</label>
+                                        <input type="text" id="nombreDia" name="nombreDia" required>
+                
+                                        <label for="fechaDia">Fecha:</label>
+                                        <input type="text" id="fechaDia" name="fechaDia" required>
+                
+                                        <button type="submit">Agregar</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <script>
+                                document.addEventListener('DOMContentLoaded', function () {
+                                    // Función para abrir el pop-up
+                                    window.abrirPopup = function () {
+                                        document.getElementById("popup").style.display = "flex";
+                                    }
+                
+                                    // Función para cerrar el pop-up
+                                    window.cerrarPopup = function () {
+                                        document.getElementById("popup").style.display = "none";
+                                    }
+                
+                                    // Agregar el event listener al formulario
+                                    document.getElementById("formDias").addEventListener("submit", function (event) {
+                                        event.preventDefault();
+                
+                                        // Obtener los valores del formulario
+                                        var nombreDia = document.getElementById("nombreDia").value;
+                                        var fechaDia = document.getElementById("fechaDia").value;
+                
+                                        // Verificar que los campos no estén vacíos
+                                        if (nombreDia && fechaDia) {
+                                            // Crear el nuevo recordatorio
+                                            var nuevoRecordatorio = document.createElement("div");
+                                            nuevoRecordatorio.className = "recordatorio-1";
+                
+                                            // Crear el contenido HTML del recordatorio
+                                            nuevoRecordatorio.innerHTML = `
+                                              <div class="reunio">
+                                                  <p>${nombreDia}</p>
+                                              </div>
+                                              <div class="fecha">
+                                                  <p>${fechaDia}</p>
+                                              </div>
+                                          `;
+                
+                                            // Obtener la lista de recordatorios y agregar el nuevo
+                                            var listaRecordatorios = document.getElementById("recordatorios");
+                                            listaRecordatorios.appendChild(nuevoRecordatorio);
+                
+                                            // Cerrar el popup y resetear el formulario
+                                            cerrarPopup();
+                                            document.getElementById("formDias").reset();
+                                        } else {
+                                            alert("Por favor, completa todos los campos.");
+                                        }
+                                    });
+                
+                                    // Cerrar el popup si se hace clic fuera de él
+                                    window.onclick = function (event) {
+                                        var popup = document.getElementById("popup");
+                                        if (event.target == popup) {
+                                            cerrarPopup();
+                                        }
+                                    }
+                                });</script>
+                
+                            <div class="ad-atras">
+                                <div class="advertencia">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="bi bi-exclamation-circle-fill"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4m.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2" />
+                                    </svg>
+                                    <p style="margin-left: 30px;">Estas fechas pueden ser aplazadas o cambiadas
+                                        según los acontecimientos.</p>
+                                </div>
+                            </div>
+                        </div>
+                
+                
+                    </div>
+            </div>
+
+
+
+                <div class="caja4">
+
+
+                    <div>
+                        <canvas id="myChart3" style="height: 400px; width:130vh;"></canvas>
+                    </div>
+
+                    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+                    <script>
+                        const ctx3 = document.getElementById('myChart3');
+
+                        new Chart(ctx3, {
+                            type: 'bar',
+                            data: {
+                                labels: ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes',], // 7 etiquetas
+                                datasets: [{
+                                    label: 'Masculino',
+                                    data: [19, 17, 23, 18, 16, 21, 15], // Datos para "Masculino" en cada día
+                                    backgroundColor: 'rgba(0, 168, 232, 1)',
+                                    borderWidth: 0,
+                                    barPercentage: 0.2, // Hacer las barras delgadas
+                                    categoryPercentage: 0.5 // Acercar las barras
+                                }, {
+                                    label: 'Femenino',
+                                    data: [12, 14, 10, 16, 14, 13, 18], // Datos para "Femenino" en cada día
+                                    backgroundColor: 'gray',
+                                    borderWidth: 0,
+                                    barPercentage: 0.2, // Hacer las barras delgadas
+                                    categoryPercentage: 0.5 // Acercar las barras
+                                }]
+                            },
+                            options: {
+                                scales: {
+                                    x: {
+                                        display: true, // Mostrar etiquetas del eje x
+                                        ticks: {
+                                            color: 'black' // Color de las etiquetas
+                                        }
+                                    },
+                                    y: {
+                                        display: true, // Mantener oculto el eje y
+                                        beginAtZero: true
+                                    }
+                                },
+                                plugins: {
+                                    legend: {
+                                        display: true,
+                                    }
+                                }
+                            }
+                        });
+                    </script>
+
+
+
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+  
+
+
+   
+   <!-- Modal para cambiar asistencia -->
+    <div class="modal" id="attendance-modal">
+        <div class="modal-content">
+            <span class="close" id="close-attendance-modal">×</span>
+            <h2>Cambiar Estado de Asistencia</h2>
+            <select id="edit-attendance">
+                <option value="present">Presente</option>
+                <option value="excused">Excusado</option>
+                <option value="absent">Ausente</option>
+            </select>
+            <button id="save-attendance">Guardar Cambios</button>
+        </div>
+    </div>
+
+    <div class="modal" id="edit-modal">
+        <div class="modal-content">
+            <span class="close" id="close-edit-modal">×</span>
+            <h2>Editar Información del Usuario</h2>
+            <input id="edit-name" placeholder="Nombre" type="text" />
+            <input id="edit-email" placeholder="Email" type="text" />
+            <input id="edit-grade" placeholder="Grado" type="text" />
+            <button id="save-edit-changes">Guardar Cambios</button>
+        </div>
+    </div>
+    
+    <div class="modal" id="settings-modal">
+        <div class="modal-content">
+            <span class="close" id="close-modal">×</span>
+            <h2>Modificar Perfil</h2>
+            <input id="new-username" placeholder="Nuevo nombre de usuario" type="text" />
+            <input id="new-profile-picture" type="file" />
+            <button id="save-changes">Guardar Cambios</button>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="JS/resumen-assist.js   "></script>
+</body>
+
+</html>
